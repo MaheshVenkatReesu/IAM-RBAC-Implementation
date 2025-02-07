@@ -51,3 +51,18 @@ resource "aws_iam_policy" "developer_policy" {
   description = "Custom IAM policy for developer role"
   policy      = data.aws_iam_policy_document.developer_policy.json
 }
+
+
+
+🛡️ Security Best Practices
+Least Privilege: Always assign the minimum necessary permissions for each role.
+Enable MFA: Enforce MFA on all privileged accounts to reduce the risk of unauthorized access.
+Access Logging: Use AWS CloudTrail for auditing and to keep track of API calls made by IAM users.
+Periodic Review: Regularly review IAM roles, policies, and permissions to ensure they align with current security requirements.
+📜 License
+This project is open-source under the MIT License.
+Feel free to use, modify, and distribute it as needed.
+
+🔗 Related Links
+AWS IAM Documentation
+Terraform AWS Provider Documentation
